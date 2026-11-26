@@ -1,0 +1,6 @@
+# Carnet immobilier
+Décompresser le ZIP puis servir le contenu du dossier veille sur un hébergement statique HTTPS (GitHub Pages convient). En local, depuis veille, lancer python -m http.server 8765 et ouvrir http://localhost:8765. Sur Android, ouvrir l'adresse HTTPS dans Chrome puis choisir Installer l'application dans le menu.
+
+Choisir un projet et charger les exemples pour essayer sans compte. Pour une collecte réelle, créer une recherche sur Leboncoin avec les communes, le type de bien et le tri par date, copier son URL, puis la coller dans Recherche et critères. Saisir son jeton Apify personnel, et actualiser. Chaque clic lance une exécution sur le compte Apify et demande dix résultats maximum. Le mode détaillé peut entraîner des frais supplémentaires. Le jeton reste en mémoire jusqu'à la fermeture ou au rechargement. Le projet Conciergerie accepte une recherche choisie par l'utilisateur : une annonce ne prouve pas que son propriétaire recherche un prestataire.
+
+Les critères classent les annonces conformes avant les données manquantes puis les biens hors critères. Les mots préférés départagent chaque groupe. Les données sont conservées par projet et par navigateur. Exporter le carnet avant de changer d'appareil. Les biens en cache restent visibles hors ligne. Les exemples sont identifiés comme fictifs.

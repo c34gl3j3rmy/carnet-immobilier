@@ -1,0 +1,9 @@
+<!doctype html><html lang="fr"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#193e38"><link rel="manifest" href="app.webmanifest"><link rel="icon" href="icon192.png"><link rel="stylesheet" href="style.css"><title>Carnet immobilier</title>
+<header><div><small>VEILLE IMMOBILIÈRE</small><h1>Carnet immobilier</h1></div></header>
+<main><label>Mon projet<select id="profile"><option>Achat</option><option>Sous-location</option><option>Conciergerie</option></select></label>
+<details id="settings"><summary>Recherche et critères</summary><section><label>Recherche Leboncoin (URL avec villes, rayon et type de bien)<input id="url" type="url" placeholder="https://www.leboncoin.fr/recherche?..."></label>
+<div class="grid"><label>Budget maximal (€)<input id="budget" type="number" min="0" placeholder="Sans plafond"></label><label>Surface minimale (m²)<input id="area" type="number" min="0" placeholder="Indifférente"></label></div>
+<label>Mots à privilégier, séparés par des virgules<input id="words" placeholder="balcon, RER, meublé"></label>
+<label>Clé Apify (pour cette session)<input id="token" type="password" autocomplete="off"></label><label><input type="checkbox" id="detail"> Fiches détaillées (des frais Apify supplémentaires peuvent s'appliquer)</label><button id="refresh">Actualiser · 10 résultats maximum</button></section></details>
+<nav><label>Afficher<select id="scope"><option>À examiner</option><option>Gardées</option><option>Contactées</option><option>Écartées</option><option>Toutes</option></select></label><button id="demo">Charger des exemples</button></nav>
+<p id="msg" role="status"></p><div id="cards"></div><details><summary>Sauvegarde</summary><section><button id="save">Exporter le carnet</button><label>Restaurer une sauvegarde JSON<input id="restore" type="file" accept=".json"></label></section></details></main><script type="module" src="app.js"></script></html>
